@@ -1,1 +1,161 @@
-g
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuongpipe - Trang cá nhân</title>
+    <!-- Thư viện Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        header img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Main Content */
+        .container {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .container p {
+            font-size: 1.5em;
+            color: #555;
+        }
+
+        /* Button Container */
+        .btn-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            padding: 15px 20px;
+            background-color: #0071e3;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1em;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            width: 280px;
+        }
+
+        .btn:hover {
+            background-color: #005bb5;
+            transform: translateY(-6px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn i {
+            font-size: 1.5em;
+        }
+
+        /* Media Queries for Mobile */
+        @media (max-width: 600px) {
+            header img {
+                width: 50px;
+                height: 50px;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            .container p {
+                font-size: 1.2em;
+            }
+
+            .btn {
+                font-size: 0.9em;
+                padding: 10px 15px;
+                width: 90%;
+            }
+        }
+
+        /* Media Queries for Tablet */
+        @media (min-width: 601px) and (max-width: 1024px) {
+            .btn {
+                width: 200px;
+            }
+        }
+
+        /* Media Queries for Desktop */
+        @media (min-width: 1025px) {
+            .btn {
+                width: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="logo/logo.png" alt="Logo Cuongpipe">
+        <h1>Cuongpipe</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <p>WELCOME</p>
+        <p>Chọn một trong các nút dưới đây để truy cập các trang web của tôi:</p>
+        <div class="btn-container">
+            <!-- Links -->
+            <a href="https://t.me/sonyqc" class="btn" target="_blank">
+                <i class="fab fa-telegram-plane"></i> Telegram
+            </a>
+            <a href="https://www.youtube.com/@cuongvideos" class="btn" target="_blank">
+                <i class="fab fa-youtube"></i> My Channel Youtube
+            </a>
+            <a href="https://www.github.com/cuongctb" class="btn" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://sites.google.com/view/superphao/h%E1%BB%8Dc-k%E1%BB%B3-3" class="btn" target="_blank">
+                <i class="fa fa-globe"></i> Tài liệu học tập
+            </a>
+            <a href="http://www.yt.cuong.42web.io/" class="btn" target="_blank">
+                <i class="fab fa-youtube"></i> Xem Youtube no ads
+            </a>
+        </div>
+    </div>
+</body>
+</html>
